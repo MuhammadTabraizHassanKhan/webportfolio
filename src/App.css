@@ -1,0 +1,143 @@
+/* html {
+  scroll-behavior: y mandatory;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+} */
+
+.App {
+  text-align: center;
+  background-color: black;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@font-face {
+  font-family: PopR;
+  src: url("./assets/fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: PopSb;
+  src: url("./assets/fonts/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: Ral;
+  src: url("./assets/fonts/Raleway-Light.ttf");
+}
+
+@font-face {
+  font-family: Rr;
+  src: url("./assets/fonts/Raleway-Regular.ttf");
+}
+
+@font-face {
+  font-family: Rm;
+  src: url("./assets/fonts/Raleway-Medium.ttf");
+}
+
+@font-face {
+  font-family: RSb;
+  src: url("./assets/fonts/Raleway-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: Rb;
+  src: url("./assets/fonts/Raleway-Bold.ttf");
+}
+
+.maindog {
+  position: absolute;
+  right: 0;
+  top: 0;
+  max-width: 90%;
+  height: auto;
+}
+
+.orangebox {
+  display: flex;
+  max-width: 100%;
+  height: auto;
+}
+
+.maintext {
+  color: #F9860B;
+}
+
+.maintext::before {
+  content: "INU";
+  position: absolute;
+  right: 5px;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px;
+
+}
+
+.FeatureDog {
+  max-width: 100%;
+  height: auto;
+}
+
+.supstyle {
+  font-size: 95px;
+
+  @media(max-width:600px) {
+    font-size: 40px;
+  }
+}
+
+
+body {
+  background-color: #000;
+}
+
+@keyframes Blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+
+}
